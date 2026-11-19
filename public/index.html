@@ -1,10 +1,1 @@
-const CACHE='mayhem-shell-v1';const SHELL=['/','/manifest.webmanifest','/icon-192.png','/icon-512.png'];self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(SHELL)).then(()=>self.skipWaiting())));self.addEventListener('activate',e=>e.waitUntil(self.clients.claim()));self.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(e.request.method!=='GET'||u.pathname.startsWith('/socket.io'))return;e.respondWith(fetch(e.request).catch(()=>caches.match(e.request)))});
-âš¡ Mercy Mayhem
-Connectingâ€¦
-Install: iPhone Safari â†’ Share â†’ Add to Home Screen. Android Chrome â†’ Install app.
-Create roomJoin room
-
-
-
-
 
